@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="?selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true">
+
+    <ImageView
+        android:id="@+id/locationImage"
+        android:layout_width="71dp"
+        android:layout_height="109dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/icon_rounded_background"
+        android:contentDescription="@string/location_item_icon_description"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/locationName"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/locationName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textColor="@color/primary_text"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/locationCategory"
+        app:layout_constraintEnd_toStartOf="@+id/locationFavorite"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/locationImage"
+        app:layout_constraintTop_toTopOf="@+id/locationImage"
+        app:layout_constraintVertical_chainStyle="spread_inside"
+        tools:text="Seattle's Best Coffee Shop" />
+
+    <TextView
+        android:id="@+id/locationCategory"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="12dp"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-medium"
+        android:lines="1"
+        android:textColor="@color/secondary_text"
+        app:layout_constraintBottom_toTopOf="@+id/locationDistance"
+        app:layout_constraintEnd_toStartOf="@+id/locationFavorite"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/locationImage"
+        tools:text="Coffee Shop" />
+
+    <TextView
+        android:id="@+id/locationDistance"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="180dp"
+        android:layout_marginBottom="28dp"
+        android:textColor="@color/tertiary_text"
+        app:layout_constraintBottom_toBottomOf="@+id/locationImage"
+        app:layout_constraintEnd_toStartOf="@+id/locationFavorite"
+        tools:text="350 meters" />
+
+    <TextView
+        android:id="@+id/availability"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="10dp"
+        android:text="Availability: search in availability column"
+        app:layout_constraintStart_toEndOf="@+id/locationImage"
+        app:layout_constraintTop_toBottomOf="@+id/locationDistance" />
+
+    <CheckBox
+        android:id="@+id/locationFavorite"
+        style="?android:attr/starStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingStart="0dp"
+        android:paddingEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/locationName"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

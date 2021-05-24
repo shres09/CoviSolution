@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.pnuema.android.coviSolution">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature android:name="android.hardware.telephony" android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:fullBackupContent="@xml/full_backup_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:targetApi="n">
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule"
+            android:value="GlideModule" />
+        <meta-data
+            android:name="com.pnuema.android.coviSolution.glide.GlideConfig"
+            android:value="GlideModule" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name="com.pnuema.android.coviSolution.fullmap.ui.FullMapActivity"
+            android:label="@string/title_activity_full_map">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.pnuema.android.coviSolution.mainscreen.ui.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pnuema.android.coviSolution.details.ui.DetailsActivity"
+            android:label="@string/title_activity_details"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name="com.pnuema.android.coviSolution.main_stuff.OpenActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.pnuema.android.coviSolution.main_stuff.SecondActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name="com.pnuema.android.coviSolution.main_stuff.VaccinationAct"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name="com.pnuema.android.coviSolution.main_stuff.VideoAct"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name="com.pnuema.android.coviSolution.mainscreen.ui.MainActivity" />
+        <activity android:name="com.pnuema.android.coviSolution.main_stuff.youtube"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name="com.pnuema.android.coviSolution.main_stuff.youtube2"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name="com.pnuema.android.coviSolution.main_stuff.youtube3"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".main_stuff.AvailAct"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".main_stuff.AvailAct2"/>
+        <activity android:name=".main_stuff.AvailActMain"/>
+    </application>
+
+</manifest>

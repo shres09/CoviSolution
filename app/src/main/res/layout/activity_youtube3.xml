@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="main_stuff.youtube3"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/backerh" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/breathing_exercises_dr_vikas_mathur"
+        android:textSize="14sp" />
+
+
+    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+        android:id="@+id/youtube_player_view"
+        android:layout_width="match_parent"
+        android:layout_height="194dp"
+        app:autoPlay="false"
+        app:showFullScreenButton="false"
+        app:videoId="qSYJePpP7Uw" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/wellness_during_covid_19_basic_breathing_techniques"
+        android:textSize="18sp" />
+
+
+    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.LegacyYouTubePlayerView
+        android:layout_width="match_parent"
+        android:layout_height="186dp"
+        app:autoPlay="false"
+        app:showFullScreenButton="false"
+        app:videoId="p9F0fQK81Pw" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/how_to_escape_the_cycle_of_stress_anxiety_and_misery"
+        android:textSize="18sp" />
+
+
+    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.LegacyYouTubePlayerView
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        app:autoPlay="false"
+        app:showFullScreenButton="false"
+        app:videoId="ZhFEh2PfQl4" />
+
+
+</LinearLayout>
