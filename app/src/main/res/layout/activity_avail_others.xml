@@ -1,18 +1,345 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout2"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="10dp"
-    tools:context=".main_stuff.AvailAct">
+    android:background="@drawable/gradient_list"
+    tools:context=".main_stuff.SecondActivity">
 
-    <WebView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/webview1"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true" />
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="408dp"
+        android:layout_height="133dp"
 
-</RelativeLayout>
+
+        app:cardBackgroundColor="#FBFAFA"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        android:padding="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="42dp"
+            android:fontFamily="@font/fugaz_one"
+            android:text="Beds Availability"
+            android:textColor="#18277A"
+            android:textSize="38sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.609"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <Button
+            android:id="@+id/back2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="75dp"
+            android:layout_marginRight="10dp"
+            android:background="#00BFA5"
+            android:text="Go Back" />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <ScrollView
+        android:layout_width="408dp"
+        android:layout_height="595dp"
+        android:layout_marginBottom="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/bangalore"
+                android:layout_width="154dp"
+                android:layout_height="71dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="29dp"
+                android:layout_marginEnd="40dp"
+                android:background="#91F3E6"
+                android:text="Bengaluru"
+                app:layout_constraintEnd_toStartOf="@+id/button8"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+            <Button
+                android:id="@+id/gurgaon"
+                android:layout_width="154dp"
+                android:layout_height="71dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="31dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginEnd="41dp"
+                android:background="#91F3E6"
+                android:text="Gurgaon"
+                app:layout_constraintEnd_toStartOf="@+id/button9"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+            <Button
+                android:id="@+id/thane"
+                android:layout_width="154dp"
+                android:layout_height="71dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="40dp"
+                android:background="#91F3E6"
+                android:text="Thane"
+                app:layout_constraintEnd_toStartOf="@+id/button10"
+                app:layout_constraintHorizontal_bias="0.297"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+
+            <Button
+                android:id="@+id/delhi"
+                android:layout_width="154dp"
+                android:layout_height="71dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="40dp"
+                android:background="#91F3E6"
+                android:text="Delhi"
+                app:layout_constraintEnd_toStartOf="@+id/button10"
+                app:layout_constraintHorizontal_bias="0.297"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+            <Button
+                android:id="@+id/andhra"
+                android:layout_width="154dp"
+                android:layout_height="71dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="31dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="41dp"
+                android:background="#91F3E6"
+                android:text="Andhra Pradesh"
+                app:layout_constraintEnd_toStartOf="@+id/button11"
+                app:layout_constraintHorizontal_bias="0.305"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button5" />
+
+            <Button
+                android:id="@+id/telengana"
+                android:layout_width="154dp"
+                android:layout_height="71dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="31dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="41dp"
+                android:background="#91F3E6"
+                android:text="Telengana"
+                app:layout_constraintEnd_toStartOf="@+id/button12"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button6" />
+
+            <Button
+                android:id="@+id/pune"
+                android:layout_width="154dp"
+                android:layout_height="71dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="31dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="41dp"
+                android:background="#91F3E6"
+                android:text="Pune"
+                app:layout_constraintEnd_toStartOf="@+id/button13"
+                app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+            <Button
+                android:id="@+id/ahem"
+                android:layout_width="154dp"
+                android:layout_height="71dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="31dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="41dp"
+                android:background="#91F3E6"
+                android:text="Ahmedabad"
+                app:layout_constraintEnd_toStartOf="@+id/button14"
+                app:layout_constraintTop_toBottomOf="@+id/button8" />
+
+            <Button
+                android:id="@+id/madhya"
+                android:layout_width="154dp"
+                android:layout_height="71dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="31dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="41dp"
+                android:background="#91F3E6"
+                android:text="Madhya Pradesh"
+                app:layout_constraintEnd_toStartOf="@+id/button15"
+                app:layout_constraintTop_toBottomOf="@+id/button9" />
+
+            <Button
+                android:id="@+id/nagpur"
+                android:layout_width="154dp"
+                android:layout_height="71dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="31dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="41dp"
+                android:background="#91F3E6"
+                android:text="Nagpur"
+                app:layout_constraintEnd_toStartOf="@+id/button16"
+                app:layout_constraintTop_toBottomOf="@+id/button10" />
+
+            <Button
+                android:id="@+id/vada"
+                android:layout_width="154dp"
+                android:layout_height="71dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="31dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="41dp"
+                android:background="#91F3E6"
+                android:text="Vadodara"
+                app:layout_constraintEnd_toStartOf="@+id/button17"
+                app:layout_constraintTop_toBottomOf="@+id/button11" />
+
+            <Button
+                android:id="@+id/rajasthan"
+                android:layout_width="154dp"
+                android:layout_height="71dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="31dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="41dp"
+                android:background="#91F3E6"
+                android:text="Rajasthan"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+            <Button
+                android:id="@+id/bhopal"
+                android:layout_width="154dp"
+                android:layout_height="71dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="31dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="41dp"
+                android:background="#91F3E6"
+                android:text="Bhopal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button13" />
+
+            <Button
+                android:id="@+id/tn"
+                android:layout_width="154dp"
+                android:layout_height="71dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="31dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="41dp"
+                android:background="#91F3E6"
+                android:text="Tamil Nadu"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button14" />
+
+            <Button
+                android:id="@+id/haryana"
+                android:layout_width="154dp"
+                android:layout_height="71dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="31dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="41dp"
+                android:background="#91F3E6"
+                android:text="Haryana"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button15" />
+
+            <Button
+                android:id="@+id/uttar"
+                android:layout_width="154dp"
+                android:layout_height="71dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="31dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="41dp"
+                android:background="#91F3E6"
+                android:text="Uttar Pradesh"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button16" />
+
+            <Button
+                android:id="@+id/bengal"
+                android:layout_width="154dp"
+                android:layout_height="71dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="31dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="41dp"
+                android:background="#91F3E6"
+                android:text="West Bengal"
+                app:layout_constraintEnd_toStartOf="@+id/button19"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button7" />
+
+            <Button
+                android:id="@+id/nashik"
+                android:layout_width="154dp"
+                android:layout_height="71dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="31dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="41dp"
+                android:background="#91F3E6"
+                android:text="Nashik"
+                app:layout_constraintEnd_toStartOf="@+id/button20"
+                app:layout_constraintTop_toBottomOf="@+id/button12" />
+
+            <Button
+                android:id="@+id/gandhi"
+                android:layout_width="154dp"
+                android:layout_height="71dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="31dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="41dp"
+                android:background="#91F3E6"
+                android:text="Gandhinagar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button17" />
+            <Button
+                android:id="@+id/beed"
+                android:layout_width="154dp"
+                android:layout_height="71dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="31dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="41dp"
+                android:background="#91F3E6"
+                android:text="Beed"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button17" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

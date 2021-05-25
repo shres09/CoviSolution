@@ -43,7 +43,7 @@ class SecondActivity  : AppCompatActivity() {
         availbro.setOnClickListener(){
             Log.i("OpenActivity", "Go to availability Page")
 
-            val intent= Intent(this, AvailActMain::class.java)
+            val intent= Intent(this, AvailAct::class.java)
             startActivity(intent)
         }
 
