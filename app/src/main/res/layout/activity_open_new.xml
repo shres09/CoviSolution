@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#CAEFF4"
+    android:background="#283039"
     tools:context=".main_stuff.OpenActivity">
 
 
@@ -12,28 +12,10 @@
         android:id="@+id/pineLogo"
         android:layout_width="200dp"
         android:layout_height="200dp"
+        android:foregroundGravity="center"
         android:src="@drawable/covisolution"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:foregroundGravity="center"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="192dp"
-        android:layout_marginEnd="52dp"
-        android:fontFamily="@font/fredoka_one"
-        android:gravity="center"
-        android:text="CoviSolution"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="#0B6370"
-        android:textSize="45sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.133"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
