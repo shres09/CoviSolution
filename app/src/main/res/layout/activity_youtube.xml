@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".main_stuff.youtube"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <Button
+        android:id="@+id/backbro"
+        android:layout_width="107dp"
+        android:layout_height="37dp"
+        android:text="@string/guif" />
+
+    <Button
+        android:id="@+id/button30"
+        android:layout_width="107dp"
+        android:layout_height="37dp"
+        android:layout_marginHorizontal="190dp"
+        android:text="@string/next" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/youtube_videos"
+        android:textColor="#E60808"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/covid_19_and_mental_health"
+        android:textSize="14sp" />
+
+    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+        android:id="@+id/youtube_player_views"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:videoId="CVvGvoMRUhk"
+        app:autoPlay="false"
+        app:showFullScreenButton="false" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/coronavirus_mental_health_and_wellness_during_the_covid_19_pandemic"
+        android:textSize="18sp" />
+
+
+    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.LegacyYouTubePlayerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:autoPlay="false"
+        app:showFullScreenButton="false"
+        app:videoId="FqprqUd56_g" />
+
+
+
+
+</LinearLayout>
+
+
+
+

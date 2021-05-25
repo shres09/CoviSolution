@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="main_stuff.youtube2"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/button40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/back" />
+
+    <Button
+        android:id="@+id/button50"
+        android:layout_width="100dp"
+        android:layout_height="49dp"
+        android:layout_marginHorizontal="300dp"
+        android:text="@string/equfho" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/_5_tips_to_improve_your_mental_health"
+        android:textSize="14sp" />
+
+
+    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+        android:id="@+id/youtube_player_views"
+        android:layout_width="match_parent"
+        android:layout_height="194dp"
+        app:autoPlay="false"
+        app:showFullScreenButton="false"
+        app:videoId="wOGqlVqyvCM" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sadhguru_with_medical_experts"
+        android:textSize="18sp" />
+
+
+    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.LegacyYouTubePlayerView
+        android:layout_width="match_parent"
+        android:layout_height="186dp"
+        app:autoPlay="false"
+        app:showFullScreenButton="false"
+        app:videoId="B9uCN3zwrBo" />
+
+    <TextView
+        android:id="@+id/textView60"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/_5_tips_to_improve_your_mental_health"
+        android:textSize="18sp" />
+
+
+    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.LegacyYouTubePlayerView
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        app:autoPlay="false"
+        app:showFullScreenButton="false"
+        app:videoId="A4h4Bjdbqiw" />
+
+
+
+
+
+</LinearLayout>
